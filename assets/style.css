@@ -1,0 +1,122 @@
+body {
+    background-color:rgb(56, 56, 56);
+    font-family:Arial, Helvetica, sans-serif;
+    color:#000;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0);
+    max-width: 65px;
+    margin: auto;
+    float: left;
+}
+
+.info {
+    font-family:verdana;
+    font-size: 14px;
+    font-weight:bold;
+    color:#ffffff;
+    margin: auto;
+}
+* {margin:0; padding:0;}
+
+nav {
+    margin:auto;
+    text-align: center;
+    width: 100%;
+} 
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover > ul{
+    display: block;
+    width: 150px;
+}
+
+nav ul {
+    background: rgb(31, 31, 31);
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    width: 100%;
+}
+
+nav ul:after {
+    content: ""; 
+    clear:both; 
+    display: block;
+}
+
+nav ul li{
+    float:left;
+}
+
+nav ul li:hover{
+    background:#666;
+}
+
+nav ul li:hover a{
+    color:#fff;
+}
+
+nav ul li a{
+    display: block;
+    padding: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul ul{
+    background: rgb(31, 31, 31);
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top:100%;
+}
+
+.download {
+    text-align: center;
+    color: #fff;
+}
+
+.itv {
+    height: 710px;
+    width: 100%;
+}
+
+.channel{
+    width: 40%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+nav ul ul li{
+    float:none;
+    border-top: 1px soild rgb(31, 31, 31);
+    border-bottom: 1px solid rgb(31, 31, 31);
+    position: relative;
+}
+
+nav ul ul li a{
+    padding: 15px 40px;
+    color: #fff;
+}
+
+nav ul ul li a:hover{
+    background-color: #666;
+}
+
+nav ul ul ul{
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+@media (min-width:320px)  { /* smartphone, iPhone, potret 480x320 ponsel */ }
+@media (min-width:481px)  { /* e-reader potret (Nook/Kindle), tablet yang lebih kecil dengan lebar @ 600 atau @ 640. */ }
+@media (min-width:641px)  { /* tablet potret, iPad potret, e-reader lanskap, ponsel lanskap 800x480 atau 854x480 */ }
+@media (min-width:961px)  { /* tablet, iPad lanskap, laptop dan desktop beresolusi rendah */ }
+@media (min-width:1025px) { /* tablet lanskap besar, laptop, dan desktop */ }
+@media (min-width:1281px) { /* laptop dan desktop beresolusi tinggi */ }
